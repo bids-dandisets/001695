@@ -3,24 +3,104 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 3088305774
+  numberOfFiles: 22
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
-citation: Gonzalez, Joaquin (2026) High-density extracellular recordings (Neuropixels/SiNAPS)
-  of Hippocampal-Cortical dynamics during spatial behavior (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/001695/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectrodeGroup
+  - Units
+  - ElectricalSeries
+  - Position
+  - SpatialSeries
+  - ProcessingModule
+  - LFP
+citation: Gonzalez, Joaquin; Voroslakos, Mihaly (2026) High-density extracellular
+  recordings (Neuropixels/SiNAPS) of Hippocampal-Cortical dynamics during spatial
+  behavior (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001695/draft
 contributor:
 - affiliation: []
   email: joaqgonzar@gmail.com
+  identifier: 0000-0002-8721-4292
   includeInCitation: true
   name: Gonzalez, Joaquin
   roleName:
   - dcite:ContactPerson
+  - dcite:Author
   schemaKey: Person
+- email: voroslakos@gmail.com
+  identifier: 0000-0002-1022-1355
+  includeInCitation: true
+  name: Voroslakos, Mihaly
+  roleName:
+  - dcite:ContactPerson
+  - dcite:Author
+  schemaKey: Person
+- awardNumber: RF1DA056394
+  identifier: https://ror.org/00fq5cm18
+  name: National Institute on Drug Abuse
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: P50MH132642
+  identifier: https://ror.org/04xeg9z08
+  name: National Institute of Mental Health
+  schemaKey: Organization
+- awardNumber: R01-MH139352
+  identifier: https://ror.org/04xeg9z08
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01MH122391
+  identifier: https://ror.org/04xeg9z08
+  name: National Institute of Mental Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: U19NS107616
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS142069
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2026-01-13T19:21:35.207654+00:00'
 description: "Overview This dataset provides high-density, simultaneous extracellular
   recordings from the mouse hippocampal formation (DG, CA1, CA2, CA3) and the retrosplenial
@@ -34,6 +114,7 @@ description: "Overview This dataset provides high-density, simultaneous extracel
   Local Field Potentials (LFP), specifically including single-channel traces from
   ripple-detection sites.\nBehavioral tracking variables (position, velocity, sleep
   periods, sharp-wave ripple times).\n\n"
+ethicsApproval: []
 id: DANDI:001695/draft
 identifier: DANDI:001695
 license:
@@ -42,8 +123,10 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001695/versions/draft/assets/
 name: High-density extracellular recordings (Neuropixels/SiNAPS) of Hippocampal-Cortical
   dynamics during spatial behavior.
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
 url: https://dandiarchive.org/dandiset/001695/draft
 version: draft
+wasGeneratedBy: []
